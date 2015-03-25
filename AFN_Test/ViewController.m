@@ -7,16 +7,26 @@
 //
 
 #import "ViewController.h"
-
+#import "AFNetworking.h"
+#import "ZGHttpTool.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSDictionary *params = @{@"user_name": @"jbbbb", @"user_passwd": @"123"};
+    NSString *url = @"http://120.24.81.123/zhigeng/index.php?c=login&m=register";
+    
+    [ZGHttpTool getWithURL:url params:params
+    success:^(id json){
+        NSLog(@"%@", json);
+    }failure:^(NSError *error){
+        NSLog(@"err");
+    }]; 
 }
 
 - (void)didReceiveMemoryWarning {

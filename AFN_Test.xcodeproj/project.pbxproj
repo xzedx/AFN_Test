@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63CCFAA82B9E47EF58CC46E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C60D194C3E2568926433813 /* libPods.a */; };
 		956C702D1ABA93F700E56961 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 956C702C1ABA93F700E56961 /* main.m */; };
 		956C70301ABA93F700E56961 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 956C702F1ABA93F700E56961 /* AppDelegate.m */; };
 		956C70331ABA93F700E56961 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956C70321ABA93F700E56961 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		956C70381ABA93F700E56961 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956C70371ABA93F700E56961 /* Images.xcassets */; };
 		956C703B1ABA93F700E56961 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 956C70391ABA93F700E56961 /* LaunchScreen.xib */; };
 		956C70471ABA93F700E56961 /* AFN_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 956C70461ABA93F700E56961 /* AFN_TestTests.m */; };
+		95FA5F511ABACD5C00AD9097 /* ZGHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FA5F501ABACD5C00AD9097 /* ZGHttpTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C60D194C3E2568926433813 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		956C70271ABA93F700E56961 /* AFN_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFN_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		956C702B1ABA93F700E56961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		956C702C1ABA93F700E56961 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,10 @@
 		956C70401ABA93F700E56961 /* AFN_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFN_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		956C70451ABA93F700E56961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		956C70461ABA93F700E56961 /* AFN_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFN_TestTests.m; sourceTree = "<group>"; };
+		95FA5F4F1ABACD5C00AD9097 /* ZGHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGHttpTool.h; sourceTree = "<group>"; };
+		95FA5F501ABACD5C00AD9097 /* ZGHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGHttpTool.m; sourceTree = "<group>"; };
+		9E4B1EE275394DD79FB8B54B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B387212C84E59F56E022D13E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63CCFAA82B9E47EF58CC46E2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E604222EF90B798674B68A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B387212C84E59F56E022D13E /* Pods.debug.xcconfig */,
+				9E4B1EE275394DD79FB8B54B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E4A25A972BEF7364A503A08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C60D194C3E2568926433813 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		956C701E1ABA93F700E56961 = {
 			isa = PBXGroup;
 			children = (
 				956C70291ABA93F700E56961 /* AFN_Test */,
 				956C70431ABA93F700E56961 /* AFN_TestTests */,
 				956C70281ABA93F700E56961 /* Products */,
+				0E604222EF90B798674B68A9 /* Pods */,
+				4E4A25A972BEF7364A503A08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +108,7 @@
 		956C70291ABA93F700E56961 /* AFN_Test */ = {
 			isa = PBXGroup;
 			children = (
+				95FA5F4C1ABACD1D00AD9097 /* Tool */,
 				956C702E1ABA93F700E56961 /* AppDelegate.h */,
 				956C702F1ABA93F700E56961 /* AppDelegate.m */,
 				956C70311ABA93F700E56961 /* ViewController.h */,
@@ -119,6 +147,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		95FA5F4C1ABACD1D00AD9097 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				95FA5F4F1ABACD5C00AD9097 /* ZGHttpTool.h */,
+				95FA5F501ABACD5C00AD9097 /* ZGHttpTool.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 956C704A1ABA93F700E56961 /* Build configuration list for PBXNativeTarget "AFN_Test" */;
 			buildPhases = (
+				8ED93C58B1F4DE40DC84AD3B /* Check Pods Manifest.lock */,
 				956C70231ABA93F700E56961 /* Sources */,
 				956C70241ABA93F700E56961 /* Frameworks */,
 				956C70251ABA93F700E56961 /* Resources */,
+				43270ECD5E03718E508E483C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +253,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43270ECD5E03718E508E483C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED93C58B1F4DE40DC84AD3B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		956C70231ABA93F700E56961 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +293,7 @@
 			files = (
 				956C70331ABA93F700E56961 /* ViewController.m in Sources */,
 				956C70301ABA93F700E56961 /* AppDelegate.m in Sources */,
+				95FA5F511ABACD5C00AD9097 /* ZGHttpTool.m in Sources */,
 				956C702D1ABA93F700E56961 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +414,7 @@
 		};
 		956C704B1ABA93F700E56961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B387212C84E59F56E022D13E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AFN_Test/Info.plist;
@@ -351,6 +425,7 @@
 		};
 		956C704C1ABA93F700E56961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4B1EE275394DD79FB8B54B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AFN_Test/Info.plist;
@@ -412,6 +487,7 @@
 				956C704C1ABA93F700E56961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		956C704D1ABA93F700E56961 /* Build configuration list for PBXNativeTarget "AFN_TestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +496,7 @@
 				956C704F1ABA93F700E56961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
